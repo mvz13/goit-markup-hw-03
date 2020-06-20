@@ -224,7 +224,7 @@ body {
   background-image: url(../images/clock.svg);
 }
 .icon-diagram::before {
-  background-image: url(../images/antenna.svg);
+  background-image: url(../images/diagram.svg);
 }
 .icon-astr::before {
   background-image: url(../images/astronaut.svg);
@@ -320,6 +320,7 @@ body {
 }
 .our-team-cards {
   width: calc((100%-30px * 3) / 4);
+  height: 422px;
   text-align: center;
   background-color: var(--white-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
