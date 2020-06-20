@@ -38,16 +38,12 @@
         </nav>
         <ul class="contact list">
           <li class="contact-link">
-            <a class="link" href="mailto:info@devstudio.com"
-              ><img src="./images/envelope.svg" alt="Письмо" />
-              info@devstudio.com</a
+            <a class="link mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
           <li class="contact-link">
-            <a class="link" href="tel:+380961111111"
-              ><img src="./images/smartphone.svg" alt="Телефон" /> +38 096 111
-              11 11</a
-            >
+            <a class="link phone" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -70,54 +66,28 @@
       <section class="section">
         <div class="container">
           <ul class="abilities list">
-            <li class="abilities-items">
-              <img
-                class="abilities-card"
-                src="./images/antenna.svg"
-                alt="Антена"
-              />
+            <li class="abilities-items icon-antena">
               <h3 class="abilities-title">внимание к деталям</h3>
               <p class="abilities-text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="abilities-items">
-              <img
-                class="abilities-card"
-                src="./images/clock.svg"
-                alt="Часы"
-                width="70"
-                height="70"
-              />
+            <li class="abilities-items icon-clock">
               <h3 class="abilities-title">пунктуальность</h3>
               <p class="abilities-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="abilities-items">
-              <img
-                class="abilities-card"
-                src="./images/diagram.svg"
-                alt="Ноутбук"
-                width="70"
-                height="70"
-              />
+            <li class="abilities-items icon-diagram">
               <h3 class="abilities-title">планирование</h3>
               <p class="abilities-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="abilities-items">
-              <img
-                class="abilities-card"
-                src="./images/astronaut.svg"
-                alt="Космонавт"
-                width="70"
-                height="70"
-              />
+            <li class="abilities-items icon-astr">
               <h3 class="abilities-title">современные технологии</h3>
               <p class="abilities-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -136,7 +106,7 @@
             <li class="doin-cards">
               <img
                 class="doin-image"
-                src="./images/notebook1.png"
+                src="./images/notebook1.jpg"
                 alt="Ноутбук"
                 width="370"
                 height="294"
@@ -146,7 +116,7 @@
             <li class="doin-cards">
               <img
                 class="doin-image"
-                src="./images/phone1.png"
+                src="./images/phone1.jpg"
                 alt="Мобильный телефон"
                 width="370"
                 height="294"
@@ -156,7 +126,7 @@
             <li class="doin-cards">
               <img
                 class="doin-image"
-                src="./images/display.png"
+                src="./images/display.jpg"
                 alt="Дисплей"
                 width="370"
                 height="294"
@@ -393,7 +363,7 @@
               <h3 lang="en" class="team-names">Иван Николаев</h3>
               <p lang="en" class="team-profesion">UI Designer</p>
               <ul class="contact-team list">
-                <li>
+                <li class="contact-team-item">
                   <a
                     class="contact-team-button"
                     href=""
@@ -407,7 +377,7 @@
                       width="20"
                   /></a>
                 </li>
-                <li>
+                <li class="contact-team-item">
                   <a
                     class="contact-team-button"
                     href=""
@@ -421,33 +391,40 @@
                       width="20"
                   /></a>
                 </li>
-                <li>
+                <li class="contact-team-item">
                   <a
                     class="contact-team-button"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Ссылка на Фейсбук"
-                    ><img
+                    ><svg class="contact-team-svg" widht="20" height="20">
+                      <use href="./images/sprite.svg#svg-facebook"></use>
+                    </svg>
+                    <img
                       src="./images/facebook.svg"
                       alt="facebook"
                       height="20"
                       width="20"
                   /></a>
                 </li>
-                <li>
+                <li class="contact-team-item">
                   <a
                     class="contact-team-button"
                     href=""
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Ссылка на Ин"
-                    ><img
+                    ><svg class="contact-team-svg" widht="20" height="20">
+                      <use href="./images/sprite.svg#svg-linkedin"></use>
+                    </svg>
+                    <!--<img
                       src="./images/linkedin.svg"
                       alt="in"
                       height="20"
                       width="20"
-                  /></a>
+                  />--></a
+                  >
                 </li>
               </ul>
             </li>
@@ -573,59 +550,45 @@
             <ul class="social-contact list">
               <li class="social-contact-item">
                 <a
-                  class="contact-connect-button"
+                  class="contact-connect button-inst"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Ссылка на Инстаграм"
-                  ><img
-                    src="./images/instagram1.png"
-                    alt="instagram"
-                    height="20"
-                    width="20"
-                /></a>
+                >
+                </a>
               </li>
               <li class="social-contact-item">
                 <a
-                  class="contact-connect-button"
+                  class="contact-connect button-twit"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Ссылка на Твиттер"
-                  ><img
-                    src="./images/twitter1.png"
-                    alt="twitter"
-                    height="20"
-                    width="20"
-                /></a>
+                >
+                </a>
               </li>
               <li class="social-contact-item">
                 <a
-                  class="contact-connect-button"
+                  class="contact-connect button-faceb"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Ссылка на Фейсбук"
-                  ><img
-                    src="./images/facebook1.png"
-                    alt="twitter"
-                    height="20"
-                    width="20"
-                /></a>
+                >
+                </a>
               </li>
               <li class="social-contact-item">
                 <a
-                  class="contact-connect-button"
+                  class="contact-connect"
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Ссылка на Ин"
-                  ><img
-                    src="./images/in1.png"
-                    alt="twitter"
-                    height="20"
-                    width="20"
-                /></a>
+                  ><svg widht="20" height="20">
+                    <use href="./images/symbol-defts.svg#svg-link-in"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
