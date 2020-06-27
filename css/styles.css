@@ -26,7 +26,7 @@ body {
   padding: 0 15px;
 }
 .section {
-  min-width: 1630px;
+  min-width: 1230px;
   padding-top: 94px;
   /*padding-bottom: 94px;*/
 }
@@ -63,7 +63,7 @@ body {
   display: flex;
   align-items: center;
   height: 80px;
-  margin: 0 215px;
+  margin: 0;
 }
 .navigation-container {
   display: flex;
@@ -130,7 +130,7 @@ body {
   color: var(--accent-color);
 }
 .hero {
-  min-width: 1630px;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   position: relative;
@@ -297,7 +297,7 @@ body {
 }
 /*Our Team*/
 .our-team {
-  min-width: 1630px;
+  max-width: 1600px;
   left: 0px;
   background: #f5f4fa;
 }
@@ -361,7 +361,7 @@ body {
   justify-content: space-between;
 }
 .contact-team-button {
-  display: inline-block;
+  display: flex;
   padding: 0;
   border: none;
   height: 44px;
@@ -436,10 +436,11 @@ body {
 }
 
 .footer {
-  min-width: 1630px;
+  min-width: 1230px;
   padding-top: 45px;
   padding-bottom: 21px;
   left: 1px;
+  right: 0;
   background-color: #2f303a;
 }
 .footer-part {
@@ -495,13 +496,6 @@ body {
   padding-top: 20px;
   min-height: 44px;
 }
-/* .social-contact-item {
-  height: 44px;
-  width: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 .social-contact-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -515,27 +509,14 @@ body {
   text-transform: uppercase;
 }
 .contact-connect {
-  display: inline-block;
   height: 44px;
   width: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  background-size: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
 }
-.button-inst {
-  background-image: url("../images/symbol-defs.svg#svg-insta");
-}
-.button-twit {
-  background-image: url("../images/symbol-defs.svg#svg-twit");
-}
-.button-faceb {
-  background-image: url("../images/symbol-defts.svg#svg-faceb");
-}
-/*.button-in {
-  background-image: url("../images/symbol-defs.svg#svg-link-in");
-}*/
 .contact-connect:hover,
 .contact-connect:focus {
   background-color: var(--accent-color);
